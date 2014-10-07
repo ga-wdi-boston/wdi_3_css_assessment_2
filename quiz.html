@@ -1,16 +1,17 @@
 <!-- Question 1 -->
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
-
+<header>
 <h2>My Awesome Blog</h2>
-<p>Here is description of my awesome blog</p>
+<h3>Here is description of my awesome blog</h3>  <!-- I left description as paragraph, not good -->
+</header>
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
 
 <div id="wrapper">
-<img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
 </div>
 
 <div>
@@ -23,9 +24,9 @@
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
 <style>
-p {
-  color: tomato;   <!-- looked up color syntax -->
-}
+  p {
+    color: tomato;   <!-- looked up color syntax -->
+  }
 </style>
 
 
@@ -48,9 +49,9 @@ p {
   ni hao!
 </div>
 
-<div class="greeting_X">
-  <b>konnichiwa!</b>
-</div>
+<div class="greeting_X">  <!-- or <div class="greeting" id="japan">  -->
+  <b>konnichiwa!</b>      <!-- better to add id's for single instances -->
+</div>                    <!-- also dual classes class="greeting japan" -->
 
 <div class="greeting">
   annyeonghaseyo!
