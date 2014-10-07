@@ -1,15 +1,27 @@
+
+<!-- 
+  
+  Hooray, got all of them correct. 
+
+ -->
+
+
+
+
+
 <!-- Question 1 -->
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
-
-<p>My Awesome Blog</p>
-<p>Here is description of my awesome blog</p>
+<header id="header" class="">
+  <h1>My Awesome Blog <small>Here is description of my awesome blog</small></h1>
+</header><!-- /header -->
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
-
-<div id="wrapper"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+<div id="wrapper">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+</div>
 <div>
   <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
 </div>
@@ -17,8 +29,11 @@
 <!-- Question 3 -->
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
-
-
+<style type="text/css">
+  p {
+    color: tomato; 
+  }
+</style>
 
 
 
@@ -30,7 +45,7 @@
   ni hao!
 </div>
 
-<div class="greeting">
+<div class="greeting japanese">
   konnichiwa!
 </div>
 
@@ -38,9 +53,18 @@
   annyeonghaseyo!
 </div>
 
+<style type="text/css">
+  .greeting {
+    color: green;
+  }
+  .greeting.japanese {
+    color: blue;
+  }
+</style>
 <!-- Question 5 -->
 
 <!-- Write your own question and answer it :) -->
-
+<p class="student-question">I'd like to write my own framework. Where do you suggest I start?</p>
+<p class="student-answer">Great question, student. I suggest starting with some layout styles for a grid framework.</p>
 
 
