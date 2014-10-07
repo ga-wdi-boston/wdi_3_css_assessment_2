@@ -2,14 +2,15 @@
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
 
-<p>My Awesome Blog</p>
-<p>Here is description of my awesome blog</p>
+<header>My Awesome Blog</header>
+<h3>Here is description of my awesome blog</h3>
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
 
 <div id="wrapper"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+</div>
 <div>
   <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
 </div>
@@ -18,7 +19,9 @@
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
 
-
+div p {
+  color: tomato;
+}
 
 
 
@@ -31,16 +34,43 @@
 </div>
 
 <div class="greeting">
-  konnichiwa!
+  <p> konnichiwa! </p>
 </div>
 
 <div class="greeting">
   annyeonghaseyo!
 </div>
 
+.greeting {
+  color: green;
+}
+
+.greeting p {
+  color: blue;
+}
+
 <!-- Question 5 -->
 
 <!-- Write your own question and answer it :) -->
+
+<!-- if you have two picture and want to float them to the left, just assume that the pictures are different and make different ids for them, and float them to the left  -->
+
+<div id="picture"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+</div>
+
+<div id="picture2"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+</div>
+
+
+div#picture {
+  float:left;
+}
+
+div#picture2 {
+  float:left;
+}
+
+
 
 
 
