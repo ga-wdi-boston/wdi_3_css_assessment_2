@@ -2,15 +2,19 @@
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
 
-<p>My Awesome Blog</p>
+
+<!-- 1/2 credit -->
+<h1>My Awesome Blog</h1>
 <p>Here is description of my awesome blog</p>
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
 
-<div id="wrapper"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
-<div>
+
+<!--1 point -->
+<div id="wrapper">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
   <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
 </div>
 
@@ -18,19 +22,26 @@
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
 
-
+<!--1 point -->
+p {
+  color:tomato;
+}
 
 
 
 <!-- Question 4 -->
 
-<!-- Add something to the following html to distinguish just the middle greeting. Then write CSS to make all the greetings green-colored, and just the middle one blue-colored.  -->
+<!-- Add something to the following html to distinguish just the middle greeting. Then write CSS to
+make all the greetings green-colored, and just the middle one blue-colored.  -->
 
+
+<!--i made it work but sintax a little bit comfusing with the terms i used-->
+<!--1point -->
 <div class="greeting">
   ni hao!
 </div>
 
-<div class="greeting">
+<div class="greeting" id = "blue">
   konnichiwa!
 </div>
 
@@ -38,9 +49,23 @@
   annyeonghaseyo!
 </div>
 
+.greeting{
+  color:green;
+}
+
+#blue {
+  font-weight:bold;
+  color: blue;
+}
+
 <!-- Question 5 -->
 
 <!-- Write your own question and answer it :) -->
 
+<!-- Insert a link to the image from above linking to google -->
 
-
+<div id="wrapper">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+  <p><a href="www.google.com">google image</a></p>
+  <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
+</div>
