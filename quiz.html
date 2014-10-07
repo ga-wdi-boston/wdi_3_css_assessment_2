@@ -2,22 +2,24 @@
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
 
-<p>My Awesome Blog</p>
-<p>Here is description of my awesome blog</p>
+<p>My <strong>Awesome</strong> Blog</p>
+<p>Here is description of my <em>awesome</em> blog</p>
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
 
-<div id="wrapper"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
-<div>
+<div id="wrapper">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
   <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
 </div>
 
 <!-- Question 3 -->
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
-
+p {
+  color: tomato;
+}
 
 
 
@@ -30,7 +32,7 @@
   ni hao!
 </div>
 
-<div class="greeting">
+<div class="greeting" id="i_am_blue">
   konnichiwa!
 </div>
 
@@ -38,9 +40,19 @@
   annyeonghaseyo!
 </div>
 
+.greeting {
+  color: green;
+}
+
+#i_am_blue {
+  color: blue;
+}
+
 <!-- Question 5 -->
 
 <!-- Write your own question and answer it :) -->
+<!-- Can multiple classes be specified in a selector?  If so what is their precidence? If  not, why? -->
 
+<!-- Answer -- yes, precidence is the order in which they appear in the .css file top to bottom -->
 
 
