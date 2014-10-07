@@ -1,2 +1,3 @@
-wdi_3_css_assessment_2
-======================
+# CSS Quiz!
+
+Standard instructions apply.
