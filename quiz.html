@@ -2,23 +2,31 @@
 
 <!-- Fix the following html to be more semantic and meaningful.  -->
 
-<p>My Awesome Blog</p>
+<!-- change p to h1 -->
+<h1>My Awesome Blog</h1>
 <p>Here is description of my awesome blog</p>
 
 <!-- Question 2 -->
 
 <!-- Find the bug in the following html and fix it. -->
 
-<div id="wrapper"><img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
-<div>
-  <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.</p>
+<div id="wrapper">
+  <img src="http://img2.wikia.nocookie.net/__cb20140501020117/oz_/images/4/4f/Tumblr_maktcq5bci1r7qhgbo1_500.jpg" alt="ruby slippers">
+  <div>
+    <p>Bushwick meggings beard disrupt banjo gastropub. Letterpress Helvetica selfies put a bird on it cliche. Leggings authentic letterpress crucifix, shabby chic kogi post-ironic Bushwick keytar tousled.
+    </p>
+  </div>
 </div>
+<!-- missing </div> -->
 
 <!-- Question 3 -->
 
 <!-- Write a CSS rule to make all the <p> elements tomato-colored. Yes, "tomato" is a defined CSS color. -->
 
-
+p {
+  color: tomato;
+  background-color: tomato;  // dunno if you mean font color or bg color
+}
 
 
 
@@ -30,7 +38,7 @@
   ni hao!
 </div>
 
-<div class="greeting">
+<div class="greeting middle">
   konnichiwa!
 </div>
 
@@ -38,9 +46,30 @@
   annyeonghaseyo!
 </div>
 
+.greeting {
+  color: green;
+}
+
+.greeting.middle {
+  color: blue;
+}
+
+<!-- it's evaluated left to right, i think? or maybe it's right to left? -->
+
 <!-- Question 5 -->
 
 <!-- Write your own question and answer it :) -->
 
+<!-- Set the second list item's font color to green. -->
 
+<ul class='colored-list'>
+  <li>Hello 1!</li>
+  <li>Hello 2!</li>
+  <li>Hello 3!</li>
+  <li>Hello 4!</li>
+  <li>Hello 5!</li>
+</ul>
 
+.colored-list:nth-child(2) {
+  color: green;
+}
